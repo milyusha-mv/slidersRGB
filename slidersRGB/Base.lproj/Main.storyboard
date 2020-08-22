@@ -74,13 +74,22 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eph-h1-gQy">
                                         <rect key="frame" x="-2" y="0.0" width="168.5" height="31"/>
                                         <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeValueRedSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="cTI-Pi-eNS"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="v1s-II-JDP">
                                         <rect key="frame" x="-2" y="45" width="168.5" height="31"/>
                                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeValueGreenSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="e4a-AE-1BX"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-Gi-XTR">
                                         <rect key="frame" x="-2" y="90" width="168.5" height="31"/>
+                                        <connections>
+                                            <action selector="changeValueBlueSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="YvU-su-BtA"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -102,6 +111,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="TPh-Gi-XTR" id="Dr0-EU-m7u"/>
+                        <outlet property="greenSlider" destination="v1s-II-JDP" id="GW4-MC-xXA"/>
+                        <outlet property="mainLabel" destination="frU-7f-45k" id="hUI-yu-8GE"/>
+                        <outlet property="redSlider" destination="eph-h1-gQy" id="U0H-PK-dw1"/>
+                        <outlet property="valueBlueLabel" destination="hN4-7l-zg3" id="vxZ-ae-NJ4"/>
+                        <outlet property="valueGreenLabel" destination="OJx-CZ-2Cs" id="vww-A3-eLh"/>
+                        <outlet property="valueRedLabel" destination="hH9-1h-Tgx" id="fjw-6m-A3J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
