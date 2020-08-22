@@ -36,9 +36,9 @@ class ViewController: UIViewController {
         blueSlider.minimumValue = minValue
         blueSlider.maximumValue = maxValue
         
-        valueRedLabel.text = String(redSlider.value)
-        valueGreenLabel.text = String(greenSlider.value)
-        valueBlueLabel.text = String(blueSlider.value)
+        valueRedLabel.text = String(format: "%.0f", redSlider.value)
+        valueGreenLabel.text = String(format: "%.0f", greenSlider.value)
+        valueBlueLabel.text = String(format: "%.0f", blueSlider.value)
         
     }
 
@@ -46,41 +46,33 @@ class ViewController: UIViewController {
         let roundedValue = round(redSlider.value / step) * step
         redSlider.value = roundedValue
         
-        valueRedLabel.text = String(redSlider.value)
-        
-        mainView.backgroundColor = .init(
-            red: CGFloat(redSlider.value/255),
-            green: CGFloat(greenSlider.value/255),
-            blue: CGFloat(blueSlider.value/255),
-            alpha: 1.0)
+        valueRedLabel.text = String(format: "%.0f", redSlider.value)
+        setColor()
     }
     
     @IBAction func changeValueGreenSlider() {
         let roundedValue = round(greenSlider.value / step) * step
         greenSlider.value = roundedValue
         
-        valueGreenLabel.text = String(greenSlider.value)
-        
-        mainView.backgroundColor = .init(
-            red: CGFloat(redSlider.value/255),
-            green: CGFloat(greenSlider.value/255),
-            blue: CGFloat(blueSlider.value/255),
-            alpha: 1.0)
+        valueGreenLabel.text = String(format: "%.0f", greenSlider.value)
+        setColor()
     }
     
     @IBAction func changeValueBlueSlider() {
         let roundedValue = round(blueSlider.value / step) * step
         blueSlider.value = roundedValue
         
-        valueBlueLabel.text = String(blueSlider.value)
-        
+        valueBlueLabel.text = String(format: "%.0f", blueSlider.value)
+        setColor()
+    }
+    
+    func setColor() {
         mainView.backgroundColor = .init(
             red: CGFloat(redSlider.value/255),
             green: CGFloat(greenSlider.value/255),
             blue: CGFloat(blueSlider.value/255),
             alpha: 1.0)
     }
-    
     
 }
 
