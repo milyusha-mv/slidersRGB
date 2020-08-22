@@ -23,10 +23,11 @@ class ViewController: UIViewController {
     private let minValue: Float = 0
     private let maxValue: Float = 255
     
-    private let step: Float = 1
+    private let stepSlider: Float = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         redSlider.minimumValue = minValue
         redSlider.maximumValue = maxValue
         
@@ -43,30 +44,27 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changeValueRedSlider() {
-        let roundedValue = round(redSlider.value / step) * step
+        let roundedValue = round(redSlider.value / stepSlider) * stepSlider
         redSlider.value = roundedValue
-        
         valueRedLabel.text = String(format: "%.0f", redSlider.value)
-        setColor()
+        setMainViewColor()
     }
     
     @IBAction func changeValueGreenSlider() {
-        let roundedValue = round(greenSlider.value / step) * step
+        let roundedValue = round(greenSlider.value / stepSlider) * stepSlider
         greenSlider.value = roundedValue
-        
         valueGreenLabel.text = String(format: "%.0f", greenSlider.value)
-        setColor()
+        setMainViewColor()
     }
     
     @IBAction func changeValueBlueSlider() {
-        let roundedValue = round(blueSlider.value / step) * step
+        let roundedValue = round(blueSlider.value / stepSlider) * stepSlider
         blueSlider.value = roundedValue
-        
         valueBlueLabel.text = String(format: "%.0f", blueSlider.value)
-        setColor()
+        setMainViewColor()
     }
     
-    func setColor() {
+    private func setMainViewColor() {
         mainView.backgroundColor = .init(
             red: CGFloat(redSlider.value/255),
             green: CGFloat(greenSlider.value/255),
