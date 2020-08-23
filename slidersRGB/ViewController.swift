@@ -41,6 +41,8 @@ class ViewController: UIViewController {
         valueGreenLabel.text = String(format: "%.0f", greenSlider.value)
         valueBlueLabel.text = String(format: "%.0f", blueSlider.value)
         
+        setMainViewColor()
+        
     }
 
     @IBAction func changeValueRedSlider() {
