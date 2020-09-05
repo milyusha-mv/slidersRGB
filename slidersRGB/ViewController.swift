@@ -29,6 +29,7 @@ class ViewController: UIViewController {
 // MARK: Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainView.layer.cornerRadius = 20
         setTextLabel()
         setMainViewColor()
     }
