@@ -74,20 +74,20 @@
                                         <rect key="frame" x="-2" y="0.0" width="187" height="31"/>
                                         <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <action selector="changeValueSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="cTI-Pi-eNS"/>
+                                            <action selector="changeValueSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="jfN-Kp-pXi"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="v1s-II-JDP">
                                         <rect key="frame" x="-2" y="45" width="187" height="31"/>
                                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <action selector="changeValueSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="92D-bP-3MR"/>
+                                            <action selector="changeValueSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="aXR-0P-GDB"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-Gi-XTR">
                                         <rect key="frame" x="-2" y="90" width="187" height="31"/>
                                         <connections>
-                                            <action selector="changeValueSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="6Pm-dI-XNK"/>
+                                            <action selector="changeValueSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Wv-n3-JlH"/>
                                         </connections>
                                     </slider>
                                 </subviews>
