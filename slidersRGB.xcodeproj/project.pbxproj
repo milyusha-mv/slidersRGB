@@ -13,6 +13,7 @@
 		430DB41C24F172E300AB0CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430DB41A24F172E300AB0CC4 /* Main.storyboard */; };
 		430DB41E24F172E300AB0CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 430DB41D24F172E300AB0CC4 /* Assets.xcassets */; };
 		430DB42124F172E300AB0CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430DB41F24F172E300AB0CC4 /* LaunchScreen.storyboard */; };
+		43EC07F92503BA8A006D2331 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC07F82503BA8A006D2331 /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		430DB41D24F172E300AB0CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		430DB42024F172E300AB0CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		430DB42224F172E300AB0CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43EC07F82503BA8A006D2331 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				430DB41624F172E300AB0CC4 /* SceneDelegate.swift */,
 				430DB41824F172E300AB0CC4 /* ViewController.swift */,
 				430DB41A24F172E300AB0CC4 /* Main.storyboard */,
+				43EC07F82503BA8A006D2331 /* MainPageViewController.swift */,
 				430DB41D24F172E300AB0CC4 /* Assets.xcassets */,
 				430DB41F24F172E300AB0CC4 /* LaunchScreen.storyboard */,
 				430DB42224F172E300AB0CC4 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EC07F92503BA8A006D2331 /* MainPageViewController.swift in Sources */,
 				430DB41924F172E300AB0CC4 /* ViewController.swift in Sources */,
 				430DB41524F172E300AB0CC4 /* AppDelegate.swift in Sources */,
 				430DB41724F172E300AB0CC4 /* SceneDelegate.swift in Sources */,

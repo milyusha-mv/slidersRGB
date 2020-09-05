@@ -25,6 +25,7 @@ class ViewController: UIViewController {
 // MARK: Private properties
     
     private let stepSlider: Float = 1
+    var mainViewColor: UIColor
 
 // MARK: Override methods
     override func viewDidLoad() {
@@ -40,7 +41,10 @@ class ViewController: UIViewController {
         setTextLabel()
         setMainViewColor()
     }
-
+    
+    @IBAction func doneButtonAction() {
+    }
+    
 // MARK: Private function
     private func setMainViewColor() {
         mainView.backgroundColor = .init(
