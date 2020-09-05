@@ -25,14 +25,15 @@ class ViewController: UIViewController {
 // MARK: Private properties
     
     private let stepSlider: Float = 1
-    var mainViewColor: UIColor
+    var mainViewColor: UIColor!
 
 // MARK: Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         mainView.layer.cornerRadius = 20
         setTextLabel()
-        setMainViewColor()
+        mainView.backgroundColor = mainViewColor
+//        setMainViewColor()
     }
 
 // MARK: IBActions

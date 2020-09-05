@@ -17,12 +17,19 @@ class MainPageViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         let slidersVC = segue.destination as! ViewController {
-            slidersVC.mainViewColor = viewOutlet.backgroundColor
-             }
-         }
+            if let sliderVC = segue.destination as? ViewController {
+                sliderVC.mainViewColor = viewOutlet.backgroundColor
+            }
+        }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.destination = "editSlidersSegue" {
+//            guard let slidersVC = segue.destination as! ViewController {
+//                slidersVC.mainViewColor = viewOutlet.backgroundColor
+//            }
+//        }
+//    }
 
     /*
     // MARK: - Navigation

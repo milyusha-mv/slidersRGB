@@ -15,13 +15,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gI-Q1-hNJ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gI-Q1-hNJ">
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2gI-Q1-hNJ" firstAttribute="leading" secondItem="mH7-I9-kjc" secondAttribute="leading" id="Dih-yu-cMg"/>
+                            <constraint firstItem="2gI-Q1-hNJ" firstAttribute="bottom" secondItem="mH7-I9-kjc" secondAttribute="bottom" id="FFX-vq-IzO"/>
+                            <constraint firstItem="2gI-Q1-hNJ" firstAttribute="top" secondItem="mH7-I9-kjc" secondAttribute="top" id="XTQ-4X-b6x"/>
+                            <constraint firstItem="2gI-Q1-hNJ" firstAttribute="trailing" secondItem="mH7-I9-kjc" secondAttribute="trailing" id="eQA-sv-f9W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mH7-I9-kjc"/>
                     </view>
                     <navigationItem key="navigationItem" id="x40-7L-WEs">
