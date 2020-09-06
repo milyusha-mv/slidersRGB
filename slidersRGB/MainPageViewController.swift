@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ViewControllerDelegate {
+    func saveColor(_ color: UIColor)
+}
+
 class MainPageViewController: UIViewController {
 
     @IBOutlet var viewOutlet: UIView!
@@ -16,12 +20,17 @@ class MainPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if let sliderVC = segue.destination as? ViewController {
-                sliderVC.mainViewColor = viewMainPageOutlet.backgroundColor
-            }
+        if let settingColorVC = segue.destination as? SettingColorViewController {
+            settingColorVC.mainViewColor = viewMainPageOutlet.backgroundColor
+            settingColorVC.delegate = self
         }
+    }
 
+}
+extension MainPageViewController: ViewControllerDelegate {
+    func saveColor(_ color: UIColor) {
+        viewMainPageOutlet.backgroundColor = color
+    }
 }

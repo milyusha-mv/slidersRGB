@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingColorViewController: UIViewController {
 
 // MARK: IBOutlets
     
@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     
     private let stepSlider: Float = 1
     var mainViewColor: UIColor!
+    var delegate: ViewControllerDelegate!
 
 // MARK: Override methods
     override func viewDidLoad() {
@@ -46,6 +47,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func doneButtonAction() {
+        delegate.saveColor(mainView.backgroundColor!)
+        dismiss(animated: true)
     }
     
 // MARK: Private function

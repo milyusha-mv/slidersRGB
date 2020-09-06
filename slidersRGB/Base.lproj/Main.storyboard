@@ -32,7 +32,7 @@
                     <navigationItem key="navigationItem" id="x40-7L-WEs">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="Wk6-hw-LfJ">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="showDetail" identifier="editSlidersSegue" id="ZAW-Bz-Uet"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="editSlidersSegue" id="ZAW-Bz-Uet"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="337.5" y="123.59154929577466"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting Color View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="slidersRGB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SettingColorViewController" customModule="slidersRGB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
