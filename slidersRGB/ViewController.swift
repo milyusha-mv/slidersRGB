@@ -31,14 +31,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mainView.layer.cornerRadius = 20
-        setTextLabel()
+        
         mainView.backgroundColor = mainViewColor
-//        setMainViewColor()
+        
+        setSlidersValue(CIColor(color: mainViewColor))
+        setTextLabel()
     }
 
 // MARK: IBActions
     @IBAction func changeValueSlider(_ sender: UISlider) {
-        setSlidersValue(for: sender)
+        slidersValue(for: sender)
         setTextLabel()
         setMainViewColor()
     }
@@ -61,8 +63,22 @@ class ViewController: UIViewController {
         valueBlueLabel.text = String(format: "%.0f", blueSlider.value)
     }
     
-    private func setSlidersValue(for slider: UISlider) {
+    private func slidersValue(for slider: UISlider) {
         slider.value = round(slider.value / stepSlider) * stepSlider
+    }
+    
+    private func setSlidersValue(_ color: CIColor) {
+        var fRed : CGFloat = 0
+        var fGreen : CGFloat = 0
+        var fBlue : CGFloat = 0
+        
+        fRed = color.red
+        fGreen = color.green
+        fBlue = color.blue
+        
+        redSlider.value = Float(fRed)*255
+        greenSlider.value = Float(fGreen)*255
+        blueSlider.value = Float(fBlue)*255
     }
 }
 

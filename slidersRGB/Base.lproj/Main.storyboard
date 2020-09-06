@@ -37,6 +37,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="viewMainPageOutlet" destination="2gI-Q1-hNJ" id="omo-8r-wf5"/>
                         <outlet property="viewOutlet" destination="qEK-sD-6cz" id="TEP-yM-KuA"/>
                     </connections>
                 </viewController>
